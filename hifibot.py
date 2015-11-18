@@ -83,9 +83,9 @@ class HifiBot(SingleServerIRCBot):
     if '!' == cmd[0]:
         cmd = cmd[1:]
         if cmd in self.whitelist:
-            if (self.command_count >= 32):
-                self.clear_queue()
-            self.command_count += 1
+            #if (self.command_count >= 32):
+            self.clear_queue()
+            #self.command_count += 1
 
             fh = None
             try:
